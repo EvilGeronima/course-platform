@@ -1,15 +1,21 @@
 @import "_nullstyle";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
+body {
+}
+
 .content {
   max-width: 1147px;
+  font-family: "Inter", sans-serif;
 }
+
+//Стили меню:
+
 .header {
   margin: 70px;
   max-width: 1140px;
   display: flex;
   justify-content: center;
-  font-family: "Inter", sans-serif;
 }
 .menu {
   max-width: 624px;
@@ -24,14 +30,15 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  font-size: 16px;
-  button:first-child {
-    font-weight: 700px;
-    font-weight: bold;
-  }
 }
 .menu-buttons__site {
   background: transparent;
+  &:first-child {
+    font-weight: 700px;
+    font-weight: 700;
+  }
+  font-weight: 500;
+  font-size: 16px;
 }
 .login {
   display: flex;
@@ -41,14 +48,15 @@
   background: transparent;
   margin: 0 30px 0 0;
 }
-.login__sign-up-button {
+.button {
   color: #fdfdfd;
-  background: transparent;
   background-color: #1a21bc;
   border-radius: 4px;
 }
 
-.login-size {
+.button-size {
   min-width: 165px;
   min-height: 64px;
+  max-width: 165px;
+  max-height: 64px;
 }
