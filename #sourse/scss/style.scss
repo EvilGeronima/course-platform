@@ -12,7 +12,7 @@ body {
 //Стили меню:
 
 .header {
-  margin: 70px;
+  margin: 76px 0 70px 0;
   max-width: 1140px;
   display: flex;
   justify-content: center;
@@ -41,6 +41,7 @@ body {
   font-size: 16px;
 }
 .login {
+  margin: 0 0 0 168px;
   display: flex;
 }
 .login__sign-button {
@@ -59,4 +60,122 @@ body {
   min-height: 64px;
   max-width: 165px;
   max-height: 64px;
+}
+
+//Стили основного описания:
+
+.main-discription {
+  display: flex;
+  max-width: 1140px;
+  justify-content: center;
+}
+.left-content {
+  max-width: 656px;
+}
+.tittle {
+  color: #303030;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 102px;
+  margin: 0 0 3px 0;
+}
+.text {
+  color: #2d2f30;
+  max-width: 555px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.3px;
+  margin: 0 0 10px 0;
+}
+.main-list {
+  margin: 0 0 37px 3px;
+  max-width: 503px;
+  display: flex;
+  justify-content: space-between;
+  & li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #3d424f;
+    padding: 0 0 0 33px;
+    margin: 0 48px 0 0;
+    background: url(/img/icon/main-list-icon.svg) left 6px no-repeat;
+  }
+}
+.question {
+  max-width: 653px;
+  width: 100%;
+  max-height: 114px;
+  height: 100%;
+  background: #f7fdff;
+  border-radius: 4px;
+  margin: 0 0 0 3px;
+  display: flex;
+  align-items: center;
+}
+.question__left {
+  margin: 0 106px 0 31px;
+}
+.question__left__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d2f30;
+  margin: 0 0 11px 0;
+}
+.question__left__list {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #151617;
+  padding: 0 0 0 38px;
+  background: url(/img/icon/question-list-icon.svg) 6px no-repeat;
+}
+.question_right__button {
+  min-width: 175px;
+  min-height: 64px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.right-content {
+  max-width: 437px;
+  max-height: 538px;
+  border-radius: 35% 0 40% 40%;
+  background-color: #4285f4;
+  box-shadow: 27px 18px 1px 0px rgba(181, 209, 255, 0.26);
+}
+.big-photo {
+  padding: 5px 0 95px 50px;
+  display: block;
+  height: 120%;
+  border-radius: 0 0 60% 42%;
+}
+.mini-photo {
+  max-width: 48px;
+  max-height: 48px;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  border: #f8f6f6 solid 1px;
+  &:nth-child(2) {
+    background-color: #ffc700;
+    position: absolute;
+    top: 720px;
+    left: 840px;
+  }
+  &:nth-child(3) {
+    background-color: #000aff;
+    position: absolute;
+    top: 720px;
+    left: 870px;
+  }
+  &:nth-child(4) {
+    background-color: #02c68b;
+    position: absolute;
+    top: 720px;
+    left: 900px;
+  }
 }
