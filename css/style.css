@@ -89,6 +89,7 @@ h6 {
 .content {
   max-width: 1147px;
   font-family: "Inter", sans-serif;
+  margin: 0 auto;
 }
 
 .header {
@@ -110,6 +111,7 @@ h6 {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex: 0 1 auto;
 }
 
 .menu-buttons__site {
@@ -150,6 +152,7 @@ h6 {
   display: flex;
   max-width: 1140px;
   justify-content: center;
+  justify-content: space-between;
 }
 
 .left-content {
@@ -161,7 +164,6 @@ h6 {
   font-size: 84px;
   font-weight: 700;
   line-height: 102px;
-  margin: 0 0 3px 0;
 }
 
 .text {
@@ -223,7 +225,7 @@ h6 {
   background: url(/img/icon/question-list-icon.svg) 6px no-repeat;
 }
 
-.question_right__button {
+.question_left__button {
   min-width: 175px;
   min-height: 64px;
   font-weight: 500;
@@ -235,41 +237,58 @@ h6 {
 .right-content {
   max-width: 437px;
   max-height: 538px;
-  border-radius: 35% 0 40% 40%;
+  border-radius: 35% 0 40% 42%;
   background-color: #4285f4;
   box-shadow: 27px 18px 1px 0px rgba(181, 209, 255, 0.26);
 }
 
-.big-photo {
-  padding: 5px 0 95px 50px;
-  display: block;
-  height: 120%;
-  border-radius: 0 0 60% 42%;
+.position-big-photo {
+  border-radius: 35% 0 40% 42%;
+  overflow: hidden;
+  max-width: 437px;
+  max-height: 538px;
+  z-index: 1;
 }
 
-.mini-photo {
+.big-photo {
+  margin: 0 0 0 50px;
+  display: block;
+  height: 100%;
+}
+
+.big-photo-2 {
+  max-width: 437px;
+  max-height: 538px;
+  width: 100%;
+  margin: -538px 0 0 51px;
+}
+
+.position-avatar {
+  z-index: 2;
+  margin: -45px 0 0 160px;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.position-avatar__mini-photo {
   max-width: 48px;
   max-height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border-radius: 50%;
   height: 100%;
   width: 100%;
   border: #f8f6f6 solid 1px;
 }
-.mini-photo:nth-child(2) {
+.position-avatar__mini-photo:nth-child(1) {
   background-color: #ffc700;
-  position: absolute;
-  top: 720px;
-  left: 840px;
+  margin: 0 -20px 0 0;
 }
-.mini-photo:nth-child(3) {
+.position-avatar__mini-photo:nth-child(2) {
   background-color: #000aff;
-  position: absolute;
-  top: 720px;
-  left: 870px;
+  margin: 0 -20px 0 0;
 }
-.mini-photo:nth-child(4) {
+.position-avatar__mini-photo:nth-child(3) {
   background-color: #02c68b;
-  position: absolute;
-  top: 720px;
-  left: 900px;
 }
