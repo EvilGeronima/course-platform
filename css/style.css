@@ -90,6 +90,22 @@ h6 {
   font-family: "Inter", sans-serif;
 }
 
+.button {
+  color: #fdfdfd;
+  background-color: #1a21bc;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: 0.3px;
+}
+
 .container-header {
   max-width: 1147px;
   margin: 0 auto;
@@ -98,6 +114,7 @@ h6 {
 .header {
   margin: 76px 0 70px 0;
   max-width: 1140px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -109,7 +126,7 @@ h6 {
   justify-content: space-between;
 }
 
-.menu-buttons {
+.menu-buttons-header {
   max-width: 526px;
   width: 100%;
   display: flex;
@@ -117,18 +134,20 @@ h6 {
   flex: 0 1 auto;
 }
 
-.menu-buttons__site {
+.menu-buttons-header__site {
   background: transparent;
   font-weight: 500;
   font-size: 16px;
 }
-.menu-buttons__site:first-child {
+.menu-buttons-header__site:first-child {
   font-weight: 700px;
   font-weight: 700;
 }
 
 .login {
   margin: 0 0 0 168px;
+  max-width: 360px;
+  width: 100%;
   display: flex;
 }
 
@@ -138,17 +157,21 @@ h6 {
   margin: 0 30px 0 0;
 }
 
-.button {
+.login__button-style {
   color: #fdfdfd;
   background-color: #1a21bc;
   border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
 }
 
-.button-size {
-  min-width: 165px;
-  min-height: 64px;
+.login__button-size {
   max-width: 165px;
   max-height: 64px;
+  width: 100%;
+  height: 100%;
 }
 
 .container-main-discription {
@@ -234,12 +257,9 @@ h6 {
   background: url(../img/icon/main-discription-icon/question-list-icon.svg) 6px no-repeat;
 }
 
-.question_left__button {
+.question_left__button-size {
   min-width: 175px;
   min-height: 64px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
   letter-spacing: 0.5px;
 }
 
