@@ -102,7 +102,7 @@ body {
     color: #3d424f;
     padding: 0 0 0 33px;
     margin: 0 48px 0 0;
-    background: url(/img/icon/main-list-icon.svg) left 6px no-repeat;
+    background: url("../img/icon/main-list-icon.svg") left 3px no-repeat;
   }
 }
 .question {
@@ -132,7 +132,7 @@ body {
   line-height: 27px;
   color: #151617;
   padding: 0 0 0 38px;
-  background: url(/img/icon/question-list-icon.svg) 6px no-repeat;
+  background: url(../img/icon/question-list-icon.svg) 6px no-repeat;
 }
 .question_left__button {
   min-width: 175px;
