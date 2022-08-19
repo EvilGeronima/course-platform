@@ -302,3 +302,32 @@ h6 {
 .position-avatar__mini-photo:nth-child(3) {
   background-color: #02c68b;
 }
+
+.container-company-presentation {
+  max-width: 1147px;
+  margin: 0 auto;
+}
+
+.company-presentation {
+  width: 100%;
+  max-height: 220px;
+  min-height: 220px;
+  background: #f5f9ff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.company-presentation__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 0 42px 0;
+}
+
+.company-presentation__image {
+  max-width: 945px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 49px 0 0;
+}
