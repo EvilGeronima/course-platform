@@ -1,5 +1,5 @@
 @import "_nullstyle";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
 }
@@ -334,11 +334,9 @@ body {
   overflow: hidden;
 }
 .preview-card__image-size {
-  z-index: 0;
   max-height: 386px;
 }
 .preview-card__position-info {
-  z-index: 2;
   position: absolute;
 }
 .preview-card__info {
@@ -420,3 +418,80 @@ body {
   padding: 0 0 3px 14px;
 }
 
+//Список менторов:
+
+.container-mentor {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.mentor {
+}
+.top-info-mentor {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  max-height: 154px;
+  min-width: 1140px;
+  min-heigh: 154px;
+  margin: 0 0 32px 0;
+}
+.top-info-mentor__title {
+  max-width: 458px;
+}
+
+.top-info-mentor__button {
+  max-width: 261px;
+  max-height: 64px;
+  min-width: 261px;
+  min-height: 64px;
+  border-radius: 8px;
+  text-align: center;
+  span {
+    font-weight: bold;
+  }
+  justify-content: end;
+  align-self: flex-end;
+  margin: 0 0 28px 0;
+}
+.mentor-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-mentor {
+  max-width: 360px;
+  max-height: 461px;
+  min-width: 360px;
+  min-height: 461px;
+  margin: 0 0 76px 0;
+}
+.card-mentor__photo {
+  max-width: 360px;
+  max-height: 360px;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 29px 0;
+}
+.photo-mentor {
+  max-width: 360px;
+  width: 100%;
+}
+.card-mentor__name {
+  text-align: center;
+  min-width: 217px;
+  min-height: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  margin: 0 0 10px 0;
+}
+.card-mentor__specialization {
+  min-width: 132px;
+  min-height: 23px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333333;
+}
