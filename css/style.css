@@ -312,8 +312,6 @@ h6 {
   min-width: 48px;
   min-height: 48px;
   border-radius: 50%;
-  height: 100%;
-  width: 100%;
   border: #f8f6f6 solid 1px;
 }
 .position-avatar__mini-photo:nth-child(1) {
@@ -543,7 +541,7 @@ h6 {
   max-width: 1140px;
   max-height: 154px;
   min-width: 1140px;
-  min-heigh: 154px;
+  min-height: 154px;
   margin: 0 0 32px 0;
 }
 
@@ -612,4 +610,96 @@ h6 {
   font-size: 14px;
   line-height: 150%;
   color: #333333;
+}
+
+.container-comments {
+  max-width: 1147px;
+  margin: 0 auto;
+}
+
+.comments {
+  max-height: 480px;
+}
+
+.comments-top-info {
+  max-width: 566px;
+  margin: 0 0 93px 0;
+}
+
+.compilation-comments {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-comments {
+  max-width: 360px;
+  max-height: 233px;
+  min-width: 360px;
+  min-height: 233px;
+  background: #f5f9ff;
+}
+
+.content-comments {
+  max-width: 293px;
+  max-height: 162px;
+  margin: 41px 0 0 34px;
+}
+
+.student-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  justify-self: end;
+  max-width: 211px;
+  max-height: 64px;
+  min-width: 211px;
+  min-height: 64px;
+  margin: 0 0 19px 0;
+}
+
+.student-image {
+  max-width: 64px;
+  max-height: 64px;
+  min-width: 64px;
+  min-height: 64px;
+  border-radius: 50%;
+}
+
+.student-info__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #101010;
+  margin: 0 0 9px 0;
+}
+
+.student-info__education {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #090001;
+}
+
+.card-comments__decoration {
+  transform: rotate(-180deg);
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 0px;
+  letter-spacing: 0.3px;
+  color: #4a4dc7;
+  margin: -205px 0 0 293px;
+}
+
+.card-comments__decoration-position {
+  position: absolute;
+}
+
+.comments-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #090001;
 }
