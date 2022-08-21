@@ -1,583 +1,701 @@
 @import "_nullstyle";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body {
+body {	font-family: "Inter", sans-serif;
 }
 
 .content {
-  font-family: "Inter", sans-serif;
+
 }
 
 //Переиспользуемые стили:
 
 .button {
-  color: #fdfdfd;
-  background-color: #1a21bc;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+	color: #fdfdfd;
+	background-color: #1a21bc;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
 }
 
 .title {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 77px;
-  letter-spacing: 0.3px;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 77px;
+	letter-spacing: 0.3px;
 }
 
 //Стили меню:
 
 .container-header {
-  max-width: 1147px;
-  margin: 0 auto;
+	max-width: 1147px;
+	margin: 0 auto;
 }
 .header {
-  margin: 76px 0 70px 0;
-  max-width: 1140px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+	margin: 76px 0 70px 0;
+	max-width: 1140px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 .menu {
-  max-width: 624px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+	max-width: 624px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 .logo__menu {
 }
 .menu-buttons-header {
-  max-width: 526px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex: 0 1 auto;
+	max-width: 526px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex: 0 1 auto;
 }
 .menu-buttons-header__site {
-  background: transparent;
-  &:first-child {
-    font-weight: 700px;
-    font-weight: 700;
-  }
-  font-weight: 500;
-  font-size: 16px;
+	background: transparent;
+	&:first-child {
+		font-weight: 700px;
+		font-weight: 700;
+	}
+	font-weight: 500;
+	font-size: 16px;
 }
 .login {
-  margin: 0 0 0 168px;
-  max-width: 360px;
-  width: 100%;
-  display: flex;
+	margin: 0 0 0 168px;
+	max-width: 360px;
+	width: 100%;
+	display: flex;
 }
 .login__sign-button {
-  color: #1a21bc;
-  background: transparent;
-  margin: 0 30px 0 0;
-  letter-spacing: 1px;
-  border-radius: 4px;
+	color: #1a21bc;
+	background: transparent;
+	margin: 0 30px 0 0;
+	letter-spacing: 1px;
+	border-radius: 4px;
 }
 .login__button-style {
-  color: #fdfdfd;
-  background-color: #1a21bc;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 1px;
-  border-radius: 4px;
+	color: #fdfdfd;
+	background-color: #1a21bc;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 1px;
+	border-radius: 4px;
 }
 .login__button-size {
-  max-width: 165px;
-  max-height: 64px;
-  min-width: 165px;
-  min-height: 64px;
+	max-width: 165px;
+	max-height: 64px;
+	min-width: 165px;
+	min-height: 64px;
 }
 
 //Стили основного описания:
 
 .container-main-discription {
-  max-width: 1147px;
-  margin: 0 auto;
+	max-width: 1147px;
+	margin: 0 auto;
 }
 .main-discription {
-  display: flex;
-  max-width: 1140px;
-  justify-content: center;
-  justify-content: space-between;
+	display: flex;
+	max-width: 1140px;
+	justify-content: center;
+	justify-content: space-between;
 
-  margin: 0 0 59px 0;
+	margin: 0 0 59px 0;
 }
 .left-content {
-  max-width: 656px;
+	max-width: 656px;
 }
 .main-tittle {
-  color: #303030;
-  font-size: 84px;
-  font-weight: 700;
-  line-height: 102px;
+	color: #303030;
+	font-size: 84px;
+	font-weight: 700;
+	line-height: 102px;
 }
 .text {
-  color: #2d2f30;
-  max-width: 555px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.3px;
-  margin: 0 0 10px 0;
+	color: #2d2f30;
+	max-width: 555px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0.3px;
+	margin: 0 0 10px 0;
 }
 .main-list {
-  margin: 0 0 37px 3px;
-  max-width: 503px;
-  display: flex;
-  justify-content: space-between;
-  & li {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    color: #3d424f;
-    padding: 0 0 0 33px;
-    margin: 0 48px 0 0;
-    background: url("../img/icon/main-discription-icon/main-list-icon.svg") left
-      3px no-repeat;
-  }
+	margin: 0 0 37px 3px;
+	max-width: 503px;
+	display: flex;
+	justify-content: space-between;
+	& li {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 30px;
+		color: #3d424f;
+		padding: 0 0 0 33px;
+		margin: 0 48px 0 0;
+		background: url("../img/icon/main-discription-icon/main-list-icon.svg") left
+			3px no-repeat;
+	}
 }
 .question {
-  max-width: 653px;
-  width: 100%;
-  max-height: 114px;
-  height: 100%;
-  background: #f7fdff;
-  border-radius: 4px;
-  margin: 0 0 0 3px;
-  display: flex;
-  align-items: center;
+	max-width: 653px;
+	width: 100%;
+	max-height: 114px;
+	height: 100%;
+	background: #f7fdff;
+	border-radius: 4px;
+	margin: 0 0 0 3px;
+	display: flex;
+	align-items: center;
 }
 .question__left {
-  margin: 0 106px 0 31px;
+	margin: 0 106px 0 31px;
 }
 .question__left__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #2d2f30;
-  margin: 0 0 11px 0;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #2d2f30;
+	margin: 0 0 11px 0;
 }
 .question__left__list {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  color: #151617;
-  padding: 0 0 0 38px;
-  background: url(../img/icon/main-discription-icon/question-list-icon.svg) 6px
-    no-repeat;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 27px;
+	color: #151617;
+	padding: 0 0 0 38px;
+	background: url(../img/icon/main-discription-icon/question-list-icon.svg) 6px
+		no-repeat;
 }
 .question_left__button-size {
-  min-width: 175px;
-  min-height: 64px;
-  max-width: 175px;
-  max-height: 64px;
-  letter-spacing: 0.5px;
+	min-width: 175px;
+	min-height: 64px;
+	max-width: 175px;
+	max-height: 64px;
+	letter-spacing: 0.5px;
 }
 .right-content {
-  max-width: 437px;
-  max-height: 538px;
-  border-radius: 35% 0 40% 42%;
-  background-color: #4285f4;
-  box-shadow: 27px 18px 1px 0px rgba(181, 209, 255, 0.26);
+	max-width: 437px;
+	max-height: 538px;
+	border-radius: 35% 0 40% 42%;
+	background-color: #4285f4;
+	box-shadow: 27px 18px 1px 0px rgba(181, 209, 255, 0.26);
 }
 .position-big-photo {
-  border-radius: 35% 0 40% 42%;
-  overflow: hidden;
-  max-width: 437px;
-  max-height: 538px;
-  min-width: 437px;
-  min-height: 538px;
-  z-index: 1;
+	border-radius: 35% 0 40% 42%;
+	overflow: hidden;
+	max-width: 437px;
+	max-height: 538px;
+	min-width: 437px;
+	min-height: 538px;
+	z-index: 1;
 }
 .big-photo {
-  margin: 0 0 0 50px;
-  display: block;
-  height: 100%;
+	margin: 0 0 0 50px;
+	display: block;
+	height: 100%;
 }
 .big-photo-2 {
-  max-width: 437px;
-  max-height: 538px;
-  width: 100%;
-  margin: -538px 0 0 51px;
+	max-width: 437px;
+	max-height: 538px;
+	width: 100%;
+	margin: -538px 0 0 51px;
 }
 .position-avatar {
-  z-index: 2;
-  margin: -45px 0 0 160px;
-  position: absolute;
-  display: flex;
-  flex-wrap: nowrap;
+	z-index: 2;
+	margin: -45px 0 0 160px;
+	position: absolute;
+	display: flex;
+	flex-wrap: nowrap;
 }
 .position-avatar__mini-photo {
-  max-width: 48px;
-  max-height: 48px;
-  min-width: 48px;
-  min-height: 48px;
-  border-radius: 50%;
-  border: #f8f6f6 solid 1px;
-  &:nth-child(1) {
-    background-color: #ffc700;
-    margin: 0 -20px 0 0;
-  }
-  &:nth-child(2) {
-    background-color: #000aff;
-    margin: 0 -20px 0 0;
-  }
-  &:nth-child(3) {
-    background-color: #02c68b;
-  }
+	max-width: 48px;
+	max-height: 48px;
+	min-width: 48px;
+	min-height: 48px;
+	border-radius: 50%;
+	border: #f8f6f6 solid 1px;
+	&:nth-child(1) {
+		background-color: #ffc700;
+		margin: 0 -20px 0 0;
+	}
+	&:nth-child(2) {
+		background-color: #000aff;
+		margin: 0 -20px 0 0;
+	}
+	&:nth-child(3) {
+		background-color: #02c68b;
+	}
 }
 
 //Стили презентации компаний:
 .container-company-presentation {
-  max-width: 1147px;
-  margin: 0 auto;
+	max-width: 1147px;
+	margin: 0 auto;
 }
 .company-presentation {
-  width: 100%;
-  max-height: 220px;
-  min-height: 220px;
-  background: #f5f9ff;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 0 49px 0;
+	width: 100%;
+	max-height: 220px;
+	min-height: 220px;
+	background: #f5f9ff;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 0 49px 0;
 }
 .company-presentation__position {
 }
 .company-presentation__title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  margin: 0 0 42px 0;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	margin: 0 0 42px 0;
 }
 .company-presentation__image {
-  max-width: 945px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 49px 0 0;
+	max-width: 945px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 49px 0 0;
 }
 
 //Превью популярных курсов:
 
 .container-popular-courses {
-  max-width: 1147px;
-  margin: 0 auto;
+	max-width: 1147px;
+	margin: 0 auto;
 }
 .popular-courses {
-  margin: 0 0 177px 0px;
+	margin: 0 0 177px 0px;
 }
 .top-info-courses {
-  display: flex;
-  justify-content: space-between;
-  max-height: 77px;
-  height: 100%;
-  margin: 0 0 48px 0;
+	display: flex;
+	justify-content: space-between;
+	max-height: 77px;
+	height: 100%;
+	margin: 0 0 48px 0;
 }
 .top-info-courses_title {
 }
 .top-info-courses_button-courses {
-  justify-content: end;
-  align-self: flex-end;
+	justify-content: end;
+	align-self: flex-end;
 }
 .button-courses {
-  max-width: 194px;
-  max-height: 64px;
-  min-width: 194px;
-  min-height: 64px;
-  border-radius: 8px;
+	max-width: 194px;
+	max-height: 64px;
+	min-width: 194px;
+	min-height: 64px;
+	border-radius: 8px;
 }
 .courses-compilation {
-  max-width: 1138px;
-  max-height: 454px;
+	max-width: 1138px;
+	max-height: 454px;
 }
 .menu-courses {
-  display: flex;
-  max-width: 934px;
-  justify-content: space-between;
-  padding: 0px 10px 0px 0px;
-  margin: 0 0 40px 0;
+	display: flex;
+	max-width: 934px;
+	justify-content: space-between;
+	padding: 0px 10px 0px 0px;
+	margin: 0 0 40px 0;
 }
 .menu-courses__type {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.3px;
-  color: #373737;
-  background: transparent;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.3px;
+	color: #373737;
+	background: transparent;
 }
 .preview-courses-container {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .card {
-  max-height: 386px;
-  max-width: 264px;
-  min-height: 386px;
-  min-width: 264px;
-  border-radius: 10px;
+	max-height: 386px;
+	max-width: 264px;
+	min-height: 386px;
+	min-width: 264px;
+	border-radius: 10px;
 }
 .preview-card__position-image {
-  max-height: 386px;
-  max-width: 264px;
-  min-height: 386px;
-  min-width: 264px;
+	max-height: 386px;
+	max-width: 264px;
+	min-height: 386px;
+	min-width: 264px;
 }
 .preview-card__image {
-  border-radius: 10px;
-  overflow: hidden;
+	border-radius: 10px;
+	overflow: hidden;
 }
 .preview-card__image-size {
-  max-height: 386px;
+	max-height: 386px;
 }
 .preview-card__position-info {
-  position: absolute;
+	position: absolute;
 }
 .preview-card__info {
-  margin: -120px 0 0 0;
-  min-width: 264px;
-  min-height: 121px;
-  max-width: 264px;
-  max-height: 121px;
-  background: #fdfdfd;
-  box-shadow: 0px 8px 100px rgba(65, 65, 65, 0.2);
-  border-radius: 10px;
-  padding: 9px 15px 12px 11px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+	margin: -120px 0 0 0;
+	min-width: 264px;
+	min-height: 121px;
+	max-width: 264px;
+	max-height: 121px;
+	background: #fdfdfd;
+	box-shadow: 0px 8px 100px rgba(65, 65, 65, 0.2);
+	border-radius: 10px;
+	padding: 9px 15px 12px 11px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
 .one-line-info-card {
-  display: flex;
-  justify-content: space-between;
-  min-height: 20px;
+	display: flex;
+	justify-content: space-between;
+	min-height: 20px;
 }
 .preview-card__category {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.3px;
-  color: #414141;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.3px;
+	color: #414141;
 }
 .preview-card__price {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.3px;
-  color: #101010;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.3px;
+	color: #101010;
 }
 .two-line-info-card {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .preview-card__tittle {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.3;
-  color: #101010;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.3;
+	color: #101010;
 }
 .card-two-tittle-position {
-  max-width: 207px;
+	max-width: 207px;
 }
 .card-four-tittle-position {
-  max-width: 230px;
+	max-width: 230px;
 }
 .three-line-info-card {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .preview-card__classes {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.1px;
-  color: #414141;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.1px;
+	color: #414141;
 }
 .preview-card__students {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.1px;
-  color: #414141;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.1px;
+	color: #414141;
 }
 .preview-card__grade {
-  min-width: 31px;
-  background: url(../img/icon/icon-card/star-black.svg) left -1px no-repeat;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 12px;
-  color: #101010;
-  padding: 0 0 3px 14px;
+	min-width: 31px;
+	background: url(../img/icon/icon-card/star-black.svg) left -1px no-repeat;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	color: #101010;
+	padding: 0 0 3px 14px;
 }
 
 //Список менторов:
 
 .container-mentor {
-  max-width: 1140px;
-  margin: 0 auto;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 .mentor {
 }
 .top-info-mentor {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1140px;
-  max-height: 154px;
-  min-width: 1140px;
-  min-height: 154px;
-  margin: 0 0 32px 0;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1140px;
+	max-height: 154px;
+	min-width: 1140px;
+	min-height: 154px;
+	margin: 0 0 32px 0;
 }
 .top-info-mentor__title {
-  max-width: 458px;
+	max-width: 458px;
 }
 
 .top-info-mentor__button {
-  max-width: 261px;
-  max-height: 64px;
-  min-width: 261px;
-  min-height: 64px;
-  border-radius: 8px;
-  text-align: center;
-  span {
-    font-weight: bold;
-  }
-  justify-content: end;
-  align-self: flex-end;
-  margin: 0 0 28px 0;
+	max-width: 261px;
+	max-height: 64px;
+	min-width: 261px;
+	min-height: 64px;
+	border-radius: 8px;
+	text-align: center;
+	span {
+		font-weight: bold;
+	}
+	justify-content: end;
+	align-self: flex-end;
+	margin: 0 0 28px 0;
 }
 .mentor-list-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .card-mentor {
-  max-width: 360px;
-  max-height: 461px;
-  min-width: 360px;
-  min-height: 461px;
-  margin: 0 0 76px 0;
+	max-width: 360px;
+	max-height: 461px;
+	min-width: 360px;
+	min-height: 461px;
+	margin: 0 0 76px 0;
 }
 .card-mentor__photo {
-  max-width: 360px;
-  max-height: 360px;
-  width: 100%;
-  height: 100%;
-  margin: 0 0 29px 0;
+	max-width: 360px;
+	max-height: 360px;
+	width: 100%;
+	height: 100%;
+	margin: 0 0 29px 0;
 }
 .photo-mentor {
-  max-width: 360px;
-  width: 100%;
+	max-width: 360px;
+	width: 100%;
 }
 .card-mentor__name {
-  text-align: center;
-  min-width: 217px;
-  min-height: 40px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  color: #333333;
-  margin: 0 0 10px 0;
+	text-align: center;
+	min-width: 217px;
+	min-height: 40px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	color: #333333;
+	margin: 0 0 10px 0;
 }
 .card-mentor__specialization {
-  min-width: 132px;
-  min-height: 23px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #333333;
+	min-width: 132px;
+	min-height: 23px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	color: #333333;
 }
 
 //Подборка комментариев от студентов:
 
 .container-comments {
-  max-width: 1147px;
-  margin: 0 auto;
+	max-width: 1147px;
+	margin: 0 auto;
 }
 .comments {
-  max-height: 480px;
-  margin: 0 0 96px 0;
+	max-height: 480px;
+	margin: 0 0 96px 0;
 }
 .comments-top-info {
-  max-width: 566px;
-  margin: 0 0 93px 0;
+	max-width: 566px;
+	margin: 0 0 93px 0;
 }
 .compilation-comments {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .card-comments {
-  max-width: 360px;
-  max-height: 233px;
-  min-width: 360px;
-  min-height: 233px;
-  background: #f5f9ff;
+	max-width: 360px;
+	max-height: 233px;
+	min-width: 360px;
+	min-height: 233px;
+	background: #f5f9ff;
 }
 .content-comments {
-  max-width: 293px;
-  max-height: 162px;
-  margin: 41px 0 0 34px;
+	max-width: 293px;
+	max-height: 162px;
+	margin: 41px 0 0 34px;
 }
 .student-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  justify-self: end;
-  max-width: 211px;
-  max-height: 64px;
-  min-width: 211px;
-  min-height: 64px;
-  margin: 0 0 19px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	justify-self: end;
+	max-width: 211px;
+	max-height: 64px;
+	min-width: 211px;
+	min-height: 64px;
+	margin: 0 0 19px 0;
 }
 .student-info__photo {
 }
 .student-image {
-  max-width: 64px;
-  max-height: 64px;
-  min-width: 64px;
-  min-height: 64px;
-  border-radius: 50%;
+	max-width: 64px;
+	max-height: 64px;
+	min-width: 64px;
+	min-height: 64px;
+	border-radius: 50%;
 }
 .student-info__text {
 }
 .student-info__name {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-  color: #101010;
-  margin: 0 0 9px 0;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	color: #101010;
+	margin: 0 0 9px 0;
 }
 .student-info__education {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-  color: #090001;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	color: #090001;
 }
 .card-comments__decoration {
-  transform: rotate(-180deg);
-  font-weight: 700;
-  font-size: 180px;
-  line-height: 0px;
-  letter-spacing: 0.3px;
-  color: #4a4dc7;
+	transform: rotate(-180deg);
+	font-weight: 700;
+	font-size: 180px;
+	line-height: 0px;
+	letter-spacing: 0.3px;
+	color: #4a4dc7;
 }
 .card-comments__decoration-position {
-  position: absolute;
-  margin: -250px 0 0 293px;
+	position: absolute;
+	margin: -250px 0 0 293px;
 }
 .comments-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-  color: #090001;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	color: #090001;
 }
 
+//Почтовая рассылка:
+.newsletter-container {
+	max-width: 1147px;
+	margin: 0 auto;
+}
+.newsletter {
+	max-width: 1140px;
+	max-height: 368px;
+	min-width: 1140px;
+	min-height: 368px;
+	margin: 0 0 45px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.newsletter-left-side {
+	max-width: 483px;
+	max-height: 226px;
+	min-width: 483px;
+	min-height: 226px;
+	margin: 28px 0 0 0;
+}
+.newsletter_tittle {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 52px;
+	letter-spacing: 1px;
+	color: #101010;
+	max-width: 379px;
+	max-height: 63px;
+	min-width: 379px;
+	min-height: 63px;
+}
+.newsletter__text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 36px;
+	letter-spacing: 1px;
+	color: #101010;
+	max-width: 421px;
+	max-height: 72px;
+	min-width: 421px;
+	min-height: 72px;
+	margin: 0 0 22px 0;
+}
+.newsletter__input {
+	display: flex;
+	justify-content: space-between;
+	max-width: 483px;
+	max-height: 69px;
+	min-width: 483px;
+	min-height: 69px;
+}
+.input-email-style {
+	background: #fdfdfd;
+	border: 1px solid #e2e2e2;
+	border-radius: 10px;
+	max-width: 276px;
+	max-height: 69px;
+	min-width: 276px;
+	min-height: 69px;
+	&::placeholder {
+		padding: 0 0 0 30px;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 36px;
+		letter-spacing: 1px;
+		color: #b5b5b5;
+	}
+}
+.button-input-email {
+}
+.button-input-email__style {
+	max-width: 173px;
+	max-height: 69px;
+	min-width: 173px;
+	min-height: 69px;
+	border-radius: 10px;
+	background: #4a4dc7;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 36px;
+	letter-spacing: 0.3px;
+	color: #fafaf9;
+}
+.newsletter-right-side {
+	max-width: 553px;
+	max-height: 292px;
+	min-width: 553px;
+	min-height: 292px;
+}
+.newsletter-image {
+	max-width: 553px;
+	max-height: 292px;
+}
+.newsletter-image-size {
+	max-width: 553px;
+	max-height: 292px;
+}
+.newsletter-sticker {
+	max-width: 114px;
+	max-height: 116px;
+	min-width: 114px;
+	min-height: 116px;
+	background: #1a21bc;
+	transform: matrix(0.92, 0.41, -0.39, 0.91, 0, 0);
+	border-radius: 50%;
+	position: absolute;
+	margin: -60px 0 0 270px;
+	& .newsletter-sticker-style {
+		text-align: center;
+		padding: 40px 0 0 0;
+		line-height: 18px;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: #fafaf9;
+	}
+}
