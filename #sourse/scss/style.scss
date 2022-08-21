@@ -502,6 +502,7 @@ body {
 }
 .comments {
   max-height: 480px;
+  margin: 0 0 96px 0;
 }
 .comments-top-info {
   max-width: 566px;
@@ -567,10 +568,10 @@ body {
   line-height: 0px;
   letter-spacing: 0.3px;
   color: #4a4dc7;
-  margin: -205px 0 0 293px;
 }
 .card-comments__decoration-position {
   position: absolute;
+  margin: -250px 0 0 293px;
 }
 .comments-text {
   font-weight: 400;
@@ -579,3 +580,4 @@ body {
   letter-spacing: 0.5px;
   color: #090001;
 }
+
