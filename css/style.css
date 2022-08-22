@@ -770,6 +770,12 @@ body {
   max-height: 69px;
   min-width: 276px;
   min-height: 69px;
+  padding: 0 30px 0 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  color: #101010;
 }
 .input-email-style::-moz-placeholder {
   padding: 0 0 0 30px;
