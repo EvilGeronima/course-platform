@@ -137,8 +137,7 @@ body {
 		color: #3d424f;
 		padding: 0 0 0 33px;
 		margin: 0 48px 0 0;
-		background: url("../img/icon/main-discription-icon/main-list-icon.svg") left
-			3px no-repeat;
+		background: url("../img/icon/main-discription-icon/main-list-icon.svg") left 3px no-repeat;
 	}
 }
 .question {
@@ -168,8 +167,7 @@ body {
 	line-height: 27px;
 	color: #151617;
 	padding: 0 0 0 38px;
-	background: url(../img/icon/main-discription-icon/question-list-icon.svg) 6px
-		no-repeat;
+	background: url(../img/icon/main-discription-icon/question-list-icon.svg) 6px no-repeat;
 }
 .question_left__button-size {
 	min-width: 175px;
@@ -185,7 +183,10 @@ body {
 	background-color: #4285f4;
 	box-shadow: 27px 18px 1px 0px rgba(181, 209, 255, 0.26);
 }
-.position-big-photo {
+.big-photo-block {
+	position: relative;
+}
+.shape {
 	border-radius: 35% 0 40% 42%;
 	overflow: hidden;
 	max-width: 437px;
@@ -202,11 +203,14 @@ body {
 	max-width: 437px;
 	max-height: 538px;
 	width: 100%;
-	margin: -538px 0 0 51px;
+	position: absolute;
+	top: 0;
+	left: 50px;
 }
 .position-avatar {
-	margin: -45px 0 0 160px;
 	position: absolute;
+	top: 510px;
+	left: 140px;
 	display: flex;
 	flex-wrap: nowrap;
 }
@@ -219,14 +223,17 @@ body {
 	border: #f8f6f6 solid 1px;
 	&:nth-child(1) {
 		background-color: #ffc700;
-		margin: 0 -20px 0 0;
+		position: relative;
+		left: 40px;
 	}
 	&:nth-child(2) {
 		background-color: #000aff;
-		margin: 0 -20px 0 0;
+		position: relative;
+		left: 20px;
 	}
 	&:nth-child(3) {
 		background-color: #02c68b;
+		position: relative;
 	}
 }
 
@@ -311,6 +318,7 @@ body {
 }
 
 .card {
+	position: relative;
 	max-height: 386px;
 	max-width: 264px;
 	min-height: 386px;
@@ -332,9 +340,9 @@ body {
 }
 .preview-card__position-info {
 	position: absolute;
+	top: 266px;
 }
 .preview-card__info {
-	margin: -120px 0 0 0;
 	min-width: 264px;
 	min-height: 121px;
 	max-width: 264px;
@@ -507,6 +515,7 @@ body {
 	justify-content: space-between;
 }
 .card-comments {
+	position: relative;
 	max-width: 360px;
 	max-height: 233px;
 	min-width: 360px;
@@ -517,6 +526,7 @@ body {
 	max-width: 293px;
 	max-height: 162px;
 	margin: 41px 0 0 34px;
+	position: relative;
 }
 .student-info {
 	display: flex;
@@ -555,13 +565,13 @@ body {
 	transform: rotate(-180deg);
 	font-weight: 700;
 	font-size: 180px;
-	line-height: 0px;
-	letter-spacing: 0.3px;
 	color: #4a4dc7;
+	max-height: 60px;
 }
 .card-comments__decoration-position {
 	position: absolute;
-	margin: -250px 0 0 293px;
+	top: -20px;
+	right: 0;
 }
 .comments-text {
 	font-weight: 400;
@@ -664,6 +674,7 @@ body {
 	max-height: 292px;
 	min-width: 553px;
 	min-height: 292px;
+	position: relative;
 }
 .newsletter-image {
 	max-width: 553px;
@@ -682,7 +693,8 @@ body {
 	transform: matrix(0.92, 0.41, -0.39, 0.91, 0, 0);
 	border-radius: 50%;
 	position: absolute;
-	margin: -60px 0 0 270px;
+	top: 214px;
+	right: 133px;
 	& .newsletter-sticker-style {
 		text-align: center;
 		padding: 40px 0 0 0;
@@ -778,6 +790,7 @@ footer {
 	max-height: 94px;
 }
 .footer-input {
+	position: relative;
 	max-width: 255px;
 	min-width: 255px;
 	max-height: 40px;
@@ -803,7 +816,8 @@ footer {
 .footer-input__button-style {
 	background: none;
 	position: absolute;
-	margin: 11px 0 0 -30px;
+	top: 11px;
+	right: 13px;
 }
 .design-maker {
 	text-align: center;
