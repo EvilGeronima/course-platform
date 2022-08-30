@@ -8,33 +8,6 @@ body {
 .content {
 }
 
-@media (max-width: 1447px) {
-	.container {
-		max-width: 992px;
-	}
-}
-@media (max-width: 992px) {
-	.container {
-		max-width: 768px;
-	}
-}
-
-@media (max-width: 576px) {
-	.container {
-		max-width: none;
-	}
-	.preview-card__image {
-		display: none;
-	}
-
-	.preview-card__position-info {
-		position: static;
-		bottom: auto;
-		margin-bottom: 20px;
-		max-width: 264px;
-	}
-}
-
 //Переиспользуемые стили:
 
 .button {
@@ -59,17 +32,12 @@ body {
 }
 
 //Стили меню:
-
-.container {
-	max-width: 1147px;
-	margin: 0 auto;
-}
 .header {
 	margin: 76px 0 70px 0;
-	max-width: 1140px;
-	width: 100%;
 	display: flex;
 	justify-content: center;
+	justify-content: space-between;
+	min-width: 530px;
 }
 .menu {
 	max-width: 624px;
@@ -77,16 +45,14 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-.logo__menu {
-}
 .menu-buttons-header {
 	max-width: 526px;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	flex: 0 1 auto;
 }
 .menu-buttons-header__site {
+	margin: 0 5px 0 5px;
 	background: transparent;
 	&:first-child {
 		font-weight: 700px;
@@ -96,15 +62,14 @@ body {
 	font-size: 16px;
 }
 .login {
-	margin: 0 0 0 168px;
-	width: 360px;
 	display: flex;
+	margin-right: 15px;
+	align-self: center;
 }
 .login__sign-button {
 	font-size: 16px;
 	color: #1a21bc;
 	background: transparent;
-	margin: 0 30px 0 0;
 	letter-spacing: 1px;
 	border-radius: 4px;
 }
@@ -815,6 +780,9 @@ footer {
 	.main-discription {
 		flex-wrap: wrap-reverse;
 	}
+	.login__sign-button {
+		margin: 0;
+	}
 }
 @media (max-width: 768px) {
 	.container {
@@ -824,12 +792,23 @@ footer {
 	.preview-card__image {
 		display: none;
 	}
-
 	.preview-card__position-info {
 		position: static;
 		bottom: auto;
 		margin-bottom: 20px;
 		max-width: 264px;
+	}
+	.header {
+	}
+	.login__button-size {
+		width: 80px;
+		height: 45px;
+	}
+	.container {
+		padding: 0 15px 0 15px;
+	}
+	.menu-buttons-header {
+		display: none;
 	}
 }
 @media (max-width: 576px) {
