@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
+	padding-top: 76px;
 	font-family: "Inter", sans-serif;
 }
 
@@ -33,11 +34,10 @@ body {
 
 //Стили меню:
 .header {
-	margin: 76px 0 70px 0;
+	margin-bottom: 70px;
 	display: flex;
 	justify-content: center;
 	justify-content: space-between;
-	min-width: 530px;
 }
 .menu {
 	max-width: 624px;
@@ -91,13 +91,14 @@ body {
 
 .main-discription {
 	display: flex;
-	max-width: 1140px;
-	justify-content: center;
 	justify-content: space-between;
-	margin: 0 0 59px 0;
+	margin-bottom: 59px;
 }
 .left-content {
-	max-width: 656px;
+	display: flex;
+	flex-direction: column;
+	width: 656px;
+	max-width: 100%;
 }
 .main-tittle {
 	color: #303030;
@@ -125,15 +126,14 @@ body {
 		line-height: 30px;
 		color: #3d424f;
 		padding: 0 0 0 33px;
-		margin: 0 48px 0 0;
+
 		background: url("../img/icon/main-discription-icon/main-list-icon.svg") left 3px no-repeat;
 	}
 }
 .question {
 	max-width: 653px;
 	width: 100%;
-	max-height: 114px;
-	height: 100%;
+	height: 114px;
 	background: #f7fdff;
 	border-radius: 4px;
 	margin: 0 0 0 3px;
@@ -172,10 +172,9 @@ body {
 	width: 437px;
 	height: 538px;
 	border-radius: 35% 0 40% 42%;
-	background: #4285f4 url(/img/people/main-discription-men/big-man.png) 50px 0/100% 100% no-repeat;
+	background: #4285f4 url(../img/people/main-discription-men/big-man.png) 50px 0/100% 100% no-repeat;
 	box-shadow: 27px 18px 1px 0px rgba(181, 209, 255, 0.26);
 }
-
 .position-avatar {
 	max-width: 114px;
 	position: absolute;
@@ -207,12 +206,10 @@ body {
 
 //Стили презентации компаний:
 .company-presentation {
+	padding-top: 56px;
 	width: 100%;
 	height: 220px;
 	background: #f5f9ff;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
 	margin: 0 0 49px 0;
 }
 .company-presentation__title {
@@ -222,10 +219,14 @@ body {
 	margin: 0 0 42px 0;
 }
 .company-presentation__image {
-	max-width: 945px;
+	width: 900px;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 49px 0 0;
+	max-height: 29px;
+}
+.company-presentation__image-container {
+	display: none;
+	justify-content: space-between;
 }
 
 //Превью популярных курсов:
@@ -769,26 +770,79 @@ footer {
 }
 
 @media (max-width: 1447px) {
+	.right-content {
+		margin-bottom: 50px;
+	}
 	.container {
 		max-width: 992px;
-	}
-}
-@media (max-width: 992px) {
-	.container {
-		max-width: 768px;
 	}
 	.main-discription {
 		flex-wrap: wrap-reverse;
 	}
-	.login__sign-button {
-		margin: 0;
+	.main-discription {
+		justify-content: center;
+	}
+	.main-tittle {
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 70px;
+	}
+	.text {
+		text-align: center;
+		max-width: 100%;
+	}
+	.left-content {
+		justify-content: center;
+	}
+	.main-list {
+		max-width: 100%;
+	}
+	.company-presentation {
+		display: flex;
+	}
+	.company-presentation__title {
+	}
+	.company-presentation__image {
+		max-width: 700px;
+	}
+}
+@media (max-width: 992px) {
+	body {
+		padding-top: 40px;
+	}
+	.container {
+		max-width: 768px;
+	}
+	.company-presentation {
+		justify-content: start;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.company-presentation__image {
+		width: 100%;
+		flex-direction: column;
+	}
+	.presentation__image {
+		display: none;
+	}
+	.company-presentation__image-container {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
 	}
 }
 @media (max-width: 768px) {
+	.shape {
+		width: 292px;
+		height: 359px;
+	}
 	.container {
 		max-width: 576px;
 	}
-
+	.main-tittle {
+		font-size: 50px;
+		line-height: 70px;
+	}
 	.preview-card__image {
 		display: none;
 	}
@@ -797,8 +851,6 @@ footer {
 		bottom: auto;
 		margin-bottom: 20px;
 		max-width: 264px;
-	}
-	.header {
 	}
 	.login__button-size {
 		width: 80px;
@@ -813,6 +865,25 @@ footer {
 }
 @media (max-width: 576px) {
 	.container {
-		max-width: none;
+		min-width: none;
+	}
+	.question {
+		flex-direction: column;
+		align-self: center;
+		height: 100%;
+		width: 350px;
+		position: relative;
+	}
+	.question__left {
+		margin: 0;
+	}
+	.question__left__text {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.question__left__list {
+		margin-bottom: 20px;
+	}
+	.question_left__button-size {
 	}
 }
