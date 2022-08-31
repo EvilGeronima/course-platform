@@ -30,6 +30,8 @@ body {
 .container {
 	max-width: 1147px;
 	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 //Стили меню:
@@ -283,14 +285,11 @@ body {
 	position: relative;
 }
 .preview-card__image {
-	height: 386px;
-	width: 264px;
-	border-radius: 10px;
 	overflow: hidden;
 }
 .preview-card__image-size {
 	max-height: 386px;
-	border-radius: 0 0 5% 5%;
+	border-radius: 10px;
 }
 .preview-card__position-info {
 	position: absolute;
@@ -801,9 +800,27 @@ footer {
 		display: flex;
 	}
 	.company-presentation__title {
+		text-align: center;
 	}
 	.company-presentation__image {
 		max-width: 700px;
+	}
+	.top-info-courses_button-courses {
+		align-self: center;
+	}
+	.preview-courses-container {
+		justify-content: center;
+	}
+	.card {
+		max-width: 100%;
+		max-height: 100%;
+		flex: 0 1 50%;
+		margin-bottom: 40px;
+	}
+	.preview-card__image {
+		display: flex;
+		justify-content: center;
+		position: relative;
 	}
 }
 @media (max-width: 992px) {
@@ -829,6 +846,10 @@ footer {
 		display: flex;
 		width: 100%;
 		justify-content: space-around;
+		padding-top: 10px;
+	}
+	.title {
+		font-size: 50px;
 	}
 }
 @media (max-width: 768px) {
@@ -843,16 +864,11 @@ footer {
 		font-size: 50px;
 		line-height: 70px;
 	}
-	.preview-card__image {
-		display: none;
-	}
-	.preview-card__position-info {
-		position: static;
-		bottom: auto;
-		margin-bottom: 20px;
-		max-width: 264px;
-	}
 	.login__button-size {
+		width: 80px;
+		height: 45px;
+	}
+	.question_left__button-size {
 		width: 80px;
 		height: 45px;
 	}
@@ -861,6 +877,16 @@ footer {
 	}
 	.menu-buttons-header {
 		display: none;
+	}
+	.title {
+		font-size: 30px;
+	}
+	.button-courses {
+		width: 150px;
+		height: 45px;
+	}
+	.menu-courses__type {
+		font-size: 20px;
 	}
 }
 @media (max-width: 576px) {
@@ -885,5 +911,17 @@ footer {
 		margin-bottom: 20px;
 	}
 	.question_left__button-size {
+	}
+	.title {
+		font-size: 25px;
+		line-height: 40px;
+	}
+	.menu-courses {
+		flex-wrap: wrap;
+	}
+	.menu-courses__type {
+		font-size: 16px;
+		flex: 0 0 50%;
+		margin-bottom: 20px;
 	}
 }
