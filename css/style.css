@@ -562,7 +562,6 @@ body {
 }
 
 .comments {
-  max-height: 480px;
   margin: 0 0 96px 0;
 }
 
@@ -574,6 +573,7 @@ body {
 .compilation-comments {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card-comments {
@@ -1003,6 +1003,16 @@ footer {
   .top-info-mentor__button {
     align-self: center;
     margin: 0;
+  }
+  .comments-top-info {
+    max-width: 100%;
+    text-align: center;
+  }
+  .compilation-comments {
+    justify-content: space-around;
+  }
+  .card-comments {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 992px) {
