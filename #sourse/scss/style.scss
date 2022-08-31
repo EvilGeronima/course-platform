@@ -623,24 +623,18 @@ footer {
 }
 .footer-container {
 	max-width: 1147px;
-	max-height: 495px;
-	min-width: 1147px;
-	min-height: 495px;
 	margin: 0 auto;
+	padding: 108px 15px 34px 15px;
 }
-.footer-content {
-	padding: 108px 0 0 0;
-}
+
 .footer-row {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 0 95px 0;
 }
 .footer-top-info {
-	max-width: 179px;
-	min-width: 179px;
-	max-height: 60px;
-	min-height: 60px;
+	width: 179px;
+	height: 60px;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 0 30px 0;
@@ -654,10 +648,8 @@ footer {
 }
 .footer-text {
 	margin: 0 0 23px 0;
-	max-width: 264px;
-	min-width: 264px;
-	max-height: 44px;
-	min-height: 44px;
+	width: 264px;
+	height: 44px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
@@ -671,10 +663,8 @@ footer {
 }
 .footer-links {
 	display: flex;
-	max-width: 635px;
-	min-width: 635px;
-	max-height: 232px;
-	min-height: 232px;
+	width: 635px;
+	height: 232px;
 	justify-content: space-between;
 }
 .footer-list {
@@ -696,23 +686,18 @@ footer {
 	line-height: 26px;
 }
 .footer-mailing-list {
-	max-width: 255px;
-	max-height: 94px;
+	height: 94px;
 }
 .footer-input {
 	position: relative;
-	max-width: 255px;
-	min-width: 255px;
-	max-height: 40px;
-	min-height: 40px;
+	width: 255px;
+	height: 40px;
 }
 .footer-input-email-style {
 	background-color: rgba(255, 255, 223, 0.2);
 	border-radius: 8px;
-	max-width: 255px;
-	min-width: 255px;
-	max-height: 40px;
-	min-height: 40px;
+	width: 255px;
+	height: 40px;
 	padding: 0 26px 0 26px;
 	color: #fdfdfd;
 	font-weight: 400;
@@ -782,7 +767,7 @@ footer {
 	.card {
 		max-width: 100%;
 		max-height: 100%;
-		flex: 0 1 50%;
+		flex: 0 0 50%;
 		margin-bottom: 40px;
 	}
 	.preview-card__image {
@@ -817,6 +802,7 @@ footer {
 		justify-content: center;
 		flex-direction: column;
 		text-align: center;
+		margin-bottom: 70px;
 	}
 	.newsletter-left-side {
 		margin-bottom: 40px;
@@ -862,6 +848,33 @@ footer {
 	.title {
 		font-size: 50px;
 	}
+	.footer-row {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 150px;
+	}
+	.footer-links {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.footer-list {
+		text-align: left;
+		align-items: center;
+		flex: 0 0 50%;
+		margin-bottom: 50px;
+	}
+	.footer-links-style {
+		margin-bottom: 5px;
+	}
+	.footer-mailing-list {
+		text-align: center;
+		align-items: center;
+	}
+	.footer-info {
+		margin-bottom: 50px;
+	}
 }
 @media (max-width: 768px) {
 	.shape {
@@ -888,6 +901,9 @@ footer {
 	}
 	.menu-buttons-header {
 		display: none;
+	}
+	.card {
+		flex: 0 0 100%;
 	}
 	.title {
 		font-size: 30px;
