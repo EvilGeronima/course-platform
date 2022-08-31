@@ -382,9 +382,6 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-}
-
-.preview-card__image {
   overflow: hidden;
 }
 
@@ -657,33 +654,23 @@ body {
 }
 
 .newsletter {
-  max-width: 1140px;
-  max-height: 368px;
-  min-width: 1140px;
-  min-height: 368px;
+  width: 1140px;
+  height: 368px;
   margin: 0 0 45px 0;
   display: flex;
   justify-content: space-between;
 }
 
 .newsletter-left-side {
-  max-width: 483px;
-  max-height: 226px;
-  min-width: 483px;
-  min-height: 226px;
   margin: 28px 0 0 0;
 }
 
 .newsletter_tittle {
   font-weight: 700;
   font-size: 36px;
-  line-height: 52px;
+  line-height: 63px;
   letter-spacing: 1px;
   color: #101010;
-  max-width: 379px;
-  max-height: 63px;
-  min-width: 379px;
-  min-height: 63px;
 }
 
 .newsletter__text {
@@ -692,10 +679,6 @@ body {
   line-height: 36px;
   letter-spacing: 1px;
   color: #101010;
-  max-width: 421px;
-  max-height: 72px;
-  min-width: 421px;
-  min-height: 72px;
   margin: 0 0 22px 0;
 }
 
@@ -703,19 +686,14 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 483px;
-  max-height: 69px;
-  min-width: 483px;
-  min-height: 69px;
 }
 
 .input-email-style {
   background: #fdfdfd;
   border: 1px solid #e2e2e2;
   border-radius: 10px;
-  max-width: 276px;
-  max-height: 69px;
-  min-width: 276px;
-  min-height: 69px;
+  width: 276px;
+  height: 69px;
   padding: 0 30px 0 30px;
   font-weight: 400;
   font-size: 20px;
@@ -749,10 +727,8 @@ body {
 }
 
 .button-input-email__style {
-  max-width: 173px;
-  max-height: 69px;
-  min-width: 173px;
-  min-height: 69px;
+  width: 173px;
+  height: 69px;
   border-radius: 10px;
   background: #4a4dc7;
   font-weight: 700;
@@ -763,34 +739,25 @@ body {
 }
 
 .newsletter-right-side {
-  max-width: 553px;
-  max-height: 292px;
-  min-width: 553px;
-  min-height: 292px;
+  width: 553px;
+  height: 292px;
   position: relative;
 }
 
-.newsletter-image {
-  max-width: 553px;
-  max-height: 292px;
-}
-
 .newsletter-image-size {
-  max-width: 553px;
-  max-height: 292px;
+  width: 553px;
+  height: 292px;
 }
 
 .newsletter-sticker {
-  max-width: 114px;
-  max-height: 116px;
-  min-width: 114px;
-  min-height: 116px;
+  width: 114px;
+  height: 116px;
   background: #1a21bc;
   transform: matrix(0.92, 0.41, -0.39, 0.91, 0, 0);
   border-radius: 50%;
   position: absolute;
-  top: 214px;
-  right: 133px;
+  bottom: -20%;
+  right: 25%;
 }
 .newsletter-sticker .newsletter-sticker-style {
   text-align: center;
@@ -1004,6 +971,9 @@ footer {
     align-self: center;
     margin: 0;
   }
+  .comments {
+    margin-bottom: 0px;
+  }
   .comments-top-info {
     max-width: 100%;
     text-align: center;
@@ -1013,6 +983,29 @@ footer {
   }
   .card-comments {
     margin-bottom: 50px;
+  }
+  .newsletter {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .newsletter-left-side {
+    margin-bottom: 40px;
+  }
+  .newsletter-right-side {
+    width: 483px;
+    height: 100%;
+  }
+  .newsletter-image-size {
+    height: 100%;
+    width: 100%;
+  }
+  .newsletter__input {
+    align-items: center;
+    max-width: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -1087,10 +1080,23 @@ footer {
   .mentor-list-container {
     justify-content: center;
   }
+  .newsletter-right-side {
+    width: 483px;
+  }
+  .button-input-email__style {
+    width: 80px;
+    height: 45px;
+  }
+  .input-email-style {
+    height: 45px;
+  }
 }
 @media (max-width: 576px) {
   .container {
     min-width: none;
+  }
+  .main-list li {
+    flex: 0 0 33.333%;
   }
   .question {
     flex-direction: column;
@@ -1125,5 +1131,21 @@ footer {
   }
   .top-info-mentor__button p {
     display: none;
+  }
+  .newsletter-right-side {
+    width: 350px;
+  }
+  .input-email-style {
+    padding: 0;
+    width: 240px;
+  }
+  .newsletter-sticker {
+    width: 70px;
+    height: 70px;
+    bottom: -20%;
+  }
+  .newsletter-sticker .newsletter-sticker-style {
+    font-size: 8px;
+    padding-top: 25%;
   }
 }
