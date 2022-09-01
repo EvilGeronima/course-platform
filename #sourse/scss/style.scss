@@ -281,13 +281,12 @@ body {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	overflow: hidden;
 }
 .preview-card__image {
 }
 .preview-card__image-size {
 	max-height: 386px;
-	border-radius: 10px;
+	border-radius: 10px 10px 20px 20px;
 }
 .preview-card__position-info {
 	position: absolute;
