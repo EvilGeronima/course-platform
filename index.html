@@ -8,7 +8,6 @@
 	<title>Learn Javascript</title>
 	<link rel="shortcut icon" href="img/icon/s-icon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<script src="/js/script.js"></script>
 </head>
 
 <body>
@@ -26,8 +25,11 @@
 					</div>
 				</div>
 				<div class="login">
+					<div class="modal">
+						<p>Модальное окно</p>
+					</div>
 					<button class="login__sign-button login__button-size">Sign</button>
-					<button class="login__button-style login__button-size">
+					<button id="modalSign" class="login__button-style login__button-size">
 						Sign Up
 					</button>
 				</div>
@@ -451,6 +453,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/modal.js"></script>
 </body>
 
 </html>
